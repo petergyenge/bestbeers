@@ -1,0 +1,105 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffeedf;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+
+nav{
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    border-bottom: 2px solid #145434;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #145434;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.main-sections{
+    background-color: #145434;
+    color: #ffeedf;
+    margin: 2rem 3rem;
+    flex: 1 0 25rem;
+    padding: 2rem 2rem 3rem 2rem;
+    margin: 2rem 3rem;
+    position: relative;
+    max-width: 25rem;
+}
+
+.main-sections h1{
+    font-size: 2rem;
+    border-bottom: 1px solid #ffeedf;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-sections p{
+    font-weight: 600;
+}
+
+.buttonNumber{
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 0.25rem 0.7rem;
+    border: 2px solid #145434;
+    background-color: #ffeedf;
+    color: #145434;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.detailsButton{
+    font-weight: 600;
+    background-color: #ffeedf;
+    color: #145434;
+    padding: 1rem 5rem;
+    border: 2px solid #145434;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+.arrowImage{
+    color: #145434;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    max-width: 2.5rem;
+}
